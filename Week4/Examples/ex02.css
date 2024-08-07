@@ -1,8 +1,9 @@
-.TimesNewRoman{
+#TimesNewRoman{
     font-family: 'Times New Roman', Times, serif;
 
 
 }
-.Cambria{
+#Cambria{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
 }
