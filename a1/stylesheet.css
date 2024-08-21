@@ -55,9 +55,10 @@ footer{
     height: 50px;
     width: 50px;
 }
-.dropdown form{
-    padding-left: 20px;
-    padding-bottom: 20px;
+.dropdown #menu{
+    position: relative;
+    left: 60px;
+    top: -40px;
 }
 .pets-text{
     text-align: center;
@@ -80,6 +81,8 @@ table{
     width: 50%;
     font-family: 'Ysabeau SC';
     margin-right: 20px;
+    position: relative;
+    top: -200px;
 }
 table th{
     background-color: #fcf9ec;
@@ -155,4 +158,66 @@ table th{
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.pet-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.pet-card img {
+    width: 65%;
+    border-radius: 8px;
+}
+
+.pet-card h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 8px;
+}
+
+.pet-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    color: #36454F;
+    font-size: 20px;
+    text-decoration: none;
+}
+.gallery-text{
+    text-align: center;
+}
+.gallery-text h1{
+    color: #008080;
+    font-family: 'Poetsen One';
+}
+.gallery-text p{
+    color: #36454F;
+    font-family: 'Ysabeau SC';
 }
