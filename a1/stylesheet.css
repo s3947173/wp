@@ -2,14 +2,16 @@ body {
     width: 1200px;
     margin: auto;
 }
+.home main{
+    background-color: #fcf9ec;
+}
 header {
     height: 50px;
     background-color: #008080;
     padding: 10px;
 }
 main {
-    background-color: #fcf9ec;
-    height: 800px;
+    height: 700px;
     width: 100%;
     padding-top: 10px;
 }
@@ -56,4 +58,101 @@ footer{
 .dropdown form{
     padding-left: 20px;
     padding-bottom: 20px;
+}
+.pets-text{
+    text-align: center;
+}
+.pets-text h1{
+    font-family: 'Poetsen One';
+    color: #008080;
+    font-size: 35px;
+}
+.pets-text p{
+    font-family: 'Ysabeau SC';
+    color: #36454F;
+    font-size: 15px;
+    padding: 10px;
+}
+table{
+    float: right;
+    text-align: left;
+    border: 1px solid;
+    width: 50%;
+    font-family: 'Ysabeau SC';
+    margin-right: 20px;
+}
+table th{
+    background-color: #fcf9ec;
+    color: #008080;
+}
+.pets img{
+    padding: 10px;
+}
+.add-pet-form h2 {
+    color: #008080;
+    margin-bottom: 10px;
+    font-family: 'Poetsen One';
+    text-align: center;
+}
+
+.add-pet-form p {
+    margin-bottom: 20px;
+    color: #36454F;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.add-pet-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #36454F;
+    font-family: 'Ysabeau SC';
+}
+
+.add-pet-form input[type="text"],
+.add-pet-form input[type="number"],
+.add-pet-form textarea,
+.add-pet-form select,
+.add-pet-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-pet-form input[type="file"] {
+    padding: 5px;
+}
+
+.add-pet-form small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #d9534f;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.clear-btn {
+    color: #008080;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
