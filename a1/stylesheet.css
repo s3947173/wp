@@ -1,0 +1,59 @@
+body {
+    width: 1200px;
+    margin: auto;
+}
+header {
+    height: 50px;
+    background-color: #008080;
+    padding: 10px;
+}
+main {
+    background-color: #fcf9ec;
+    height: 800px;
+    width: 100%;
+    padding-top: 10px;
+}
+footer{
+    width: auto;
+    background-color: #E57F3D;
+    color: #008080;
+    text-align: center;
+    padding: 10px;
+    height: 75px;
+    font-family: 'Ysabeau SC';
+}
+.search input{
+    float: right;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+.heading{
+    
+    float: left;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.heading h1{
+    font-family: 'Permanent Marker';
+    font-size: 80px;
+    color: #E57F3D;
+}
+.heading h2{
+    font-family: 'Poetsen One';
+    font-size: 38px;
+    color: #008080;
+}
+.index img{
+    float: right;
+    border-radius: 50%;
+    padding-right: 20px;
+    height: 110%;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.dropdown form{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
