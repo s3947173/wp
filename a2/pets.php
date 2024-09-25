@@ -25,6 +25,37 @@ include('Includes\header.inc');
 	</div>
    </header>
    <main>
+    <table>
+        <tr>
+            <th>Pet</th>
+            <th>Type</th>
+            <th>Age</th>
+            <th>location</th>
+        </tr>
+        <?php
+    //connect
+    include('includes/db_connect.inc');
+
+    $sql = "select * from pets";
+
+    $result = $conn->query($sql);
+
+    //loop through the table of results printing each row
+    if ($result->num_rows > 0) {
+
+        while ($row = mysqli_fetch_array($result)) {
+            print "<tr>\n";
+            print "<td>{$row['Pet']}</td>\n";
+            print "<td><a href='pets.php?pets=" . urlencode($row['Type']) . "'>{$row['Type']}</a></td>\n";
+            print "<td>{$row['Age']}</td>\n";
+            print "<td>{$row['Location']}</td>\n";
+            print "</tr>\n";
+        }
+    } else {
+        echo "<tr><td colspan=4>0 results</td></tr>";
+    }
+    ?>
+    </table>
     <div class="pets-text">
 	  <h1>Discover Pets Victoria</h1>
       <p>PETS VICTORIA IS A DEDICATED PET ADOPTION ORGANISATION BASED IN VICTORIA, AUSTRALIA, FOCUSED ON PROVIDING A SAFE AND LOVING ENVIORNMENT FOR PETS IN NEED. WITH A 
