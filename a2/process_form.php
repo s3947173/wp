@@ -1,11 +1,11 @@
 <?php
 
-include('includes/header.inc');
+include('Includes/header.inc');
 ?>
 <?php
 //can print what is in $_FILES array
 //var_dump($_FILES);
-include('includes/db_connect.inc');
+include('Includes/db_connect.inc');
 
 $petname = $_POST['petname'];
 $type = $_POST['type'];
@@ -24,5 +24,5 @@ if ($stmt->affected_rows > 0) {
 ?>
 <br><a href="pets.php">Back to list of pets</a>
 <?php
-include('includes/footer.inc');
+include('Includes/footer.inc');
 ?>
