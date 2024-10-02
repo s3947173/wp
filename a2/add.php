@@ -43,7 +43,7 @@ include('Includes/header.inc');
             <input type="file" id="image" name="image" accept="image/*" required>
             <small>Max image size: 500px</small>
 
-            <label for="image-caption">Image Caption:</label>
+            <label for="caption">Image Caption:</label>
             <input type="text" id="image-caption" name="image-caption" placeholder="Describe the image in one word" required>
 
             <label for="age">Age (months):</label>
