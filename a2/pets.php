@@ -1,5 +1,5 @@
 <?php 
-include('Includes\header.inc');
+include('Includes/header.inc');
 ?>
 <body>
    <header>
@@ -68,5 +68,5 @@ include('Includes\header.inc');
 
 <?php
 $conn->close();
-include('Includes\footer.inc')
+include('Includes/footer.inc')
 ?>

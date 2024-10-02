@@ -1,5 +1,5 @@
 <?php 
-include('Includes\header.inc');
+include('Includes/header.inc');
 ?>
 <body>
     <div class="container">
@@ -61,5 +61,5 @@ include('Includes\header.inc');
 </body>
 
 <?php
-include('Includes\footer.inc')
+include('Includes/footer.inc')
 ?>

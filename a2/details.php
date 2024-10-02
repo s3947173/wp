@@ -1,5 +1,5 @@
 <?php 
-include('Includes\header.inc');
+include('Includes/header.inc');
 ?>
 <body>
    <header>
@@ -76,5 +76,5 @@ if (!empty($_GET['petid'])) {
 
 <?php
 $conn->close();
-include('Includes\footer.inc')
+include('Includes/footer.inc')
 ?>
