@@ -3,6 +3,9 @@
 include('Includes/header.inc');
 ?>
 <?php
+include('Includes/nav.inc');
+?>
+<?php
 //can print what is in $_FILES array
 //var_dump($_FILES);
 include('Includes/db_connect.inc');
