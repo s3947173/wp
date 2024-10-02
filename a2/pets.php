@@ -25,36 +25,31 @@ include('Includes\header.inc');
 	</div>
    </header>
    <main>
-    <table>
+   <table>
         <tr>
             <th>Pet</th>
-            <th>Type</th>
             <th>Age</th>
-            <th>location</th>
+            <th>Location</th>
+            <th>Type</th>
         </tr>
         <?php
-    //connect
-    include('includes/db_connect.inc');
-
-    $sql = "select * from pets";
-
-    $result = $conn->query($sql);
-
-    //loop through the table of results printing each row
-    if ($result->num_rows > 0) {
-
-        while ($row = mysqli_fetch_array($result)) {
-            print "<tr>\n";
-            print "<td>{$row['Pet']}</td>\n";
-            print "<td><a href='pets.php?pets=" . urlencode($row['Type']) . "'>{$row['Type']}</a></td>\n";
-            print "<td>{$row['Age']}</td>\n";
-            print "<td>{$row['Location']}</td>\n";
-            print "</tr>\n";
-        }
-    } else {
-        echo "<tr><td colspan=4>0 results</td></tr>";
-    }
-    ?>
+           include("includes/db_connect.inc");
+           $sql = "select * from pets";
+           $result = $conn->query($sql);
+           if ($result->num_rows > 0) {
+               while($row = $result->fetch_assoc()) {
+                   echo "<tr>
+                           <td><a href='details.php?petid=" . $row['petid'] . "'>" . $row['petname'] . "</a></td>
+                           <td>" . $row["age"] . "</td>
+                           <td>" . $row["location"] . "</td>
+                           <td>" . $row["type"] . "</td>
+                         </tr>";
+               }
+           } else {
+               echo "<tr><td colspan='4'>No pets found.</td></tr>";
+           }
+        ?>
+                              
     </table>
     <div class="pets-text">
 	  <h1>Discover Pets Victoria</h1>
@@ -72,5 +67,6 @@ include('Includes\header.inc');
 
 
 <?php
+$conn->close();
 include('Includes\footer.inc')
 ?>

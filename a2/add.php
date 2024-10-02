@@ -25,17 +25,16 @@ include('Includes\header.inc');
                 </form>
             </div>
         </header>
-        <form class="add-pet-form">
+    <div class="add-pet-form">   
+    <form action="process_form.php" method="post" enctype="multipart/form-data">
             <h2>Add a pet</h2>
             <p>You can add a new pet here</p>
 
-            <label for="pet-name">Pet Name:</label>
-            <input type="text" id="pet-name" name="pet-name" placeholder="Provide a name for the pet" required>
+            <label for="petname">Pet Name:</label>
+            <input type="text" id="petname" name="petname" placeholder="Provide a name for the pet" required>
 
             <label for="type">Type:</label>
-            <select id="type" name="type" required>
-                <option value="">--Choose an option--</option>
-            </select>
+            <input type="text" id="type" name="type" placeholder="Provide type" required>
 
             <label for="description">Description:</label>
             <textarea id="description" name="description" placeholder="Describe the pet briefly" required></textarea>
@@ -57,7 +56,7 @@ include('Includes\header.inc');
                 <button type="submit" class="submit-btn">Submit</button>
                 <button type="reset" class="clear-btn">Clear</button>
             </div>
-        </form>
+    </form>
     </div>
 </body>
 
