@@ -76,6 +76,7 @@ footer{
     color: #36454F;
     font-size: 15px;
     padding: 10px;
+    position: absolute;
 }
 table{
     float: right;
@@ -85,7 +86,7 @@ table{
     font-family: 'Ysabeau SC';
     margin-right: 20px;
     position: relative;
-    top: -200px;
+    top: 300px;
 }
 table th{
     background-color: #fcf9ec;
@@ -93,6 +94,8 @@ table th{
 }
 .pets img{
     padding: 10px;
+    position: relative;
+    top: 175px;
 }
 .add-pet-form h2 {
     color: #008080;
@@ -232,4 +235,52 @@ table th{
     float: right;
     position: relative;
     top: -43px;
+}
+.pet-details {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+/* Centering the Pet Image */
+.pet-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the Pet Meta Info (age, type, location) */
+.pet-meta {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.pet-meta div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #264653;
+}
+
+.pet-meta div span {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Styling for Pet Name and Description */
+.pet-description h2 {
+    font-size: 30px;
+    color: #264653;
+    margin-bottom: 10px;
+}
+
+.pet-description p {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 700px;
 }
