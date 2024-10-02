@@ -33,7 +33,7 @@ include('Includes/header.inc');
             <th>Type</th>
         </tr>
         <?php
-           include("includes/db_connect.inc");
+           include("Includes/db_connect.inc");
            $sql = "select * from pets";
            $result = $conn->query($sql);
            if ($result->num_rows > 0) {
