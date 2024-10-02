@@ -27,7 +27,7 @@ include('Includes/header.inc');
    <main class="pet-details">
    <?php
 if (!empty($_GET['petid'])) {
-    include('includes/db_connect.inc');
+    include('Includes/db_connect.inc');
 
     $id = $_GET['petid'];
     $sql = "SELECT * FROM pets where petid = ?";
