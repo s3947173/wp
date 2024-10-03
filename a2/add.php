@@ -5,7 +5,6 @@ include('Includes/header.inc');
 include('Includes/nav.inc');
 ?>
 <body>
-    <div class="container">
     
     <div class="add-pet-form">   
     <form action="process_form.php" method="post" enctype="multipart/form-data">
