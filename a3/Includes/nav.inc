@@ -16,7 +16,9 @@
 				<option value="index.php">Index</option>
 				<option value="pets.php">Pets</option>
 				<option value="add.php">Add</option>
-				<option value="gallery.php">Gallery</option>
+				<option value="login.php">Login</option>
+				<option value="logout.php">Logout</option>
+				<option value="register.php">Register</option>
 			</select>
 		</form>
 	</div>
