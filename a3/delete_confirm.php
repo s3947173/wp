@@ -25,7 +25,7 @@ if (!empty($_GET['id'])) {
             echo "<a href='pets.php'>Cancel</a>";
             // encode url to make html valid
             $imagename = urldecode("images/{$row['image']}");
-            echo "<a href='delete.php?id={$row['petid']}'>Delete</a>";
+            echo "<a href='delete.php?petid={$row['petid']}'>Delete</a>";
             echo "</p>";
             echo '</div>';
         }
