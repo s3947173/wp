@@ -4,6 +4,13 @@ include('Includes/header.inc');
 <?php
 include('Includes/nav.inc');
 ?>
+<?php
+if (!isset($_SESSION['username'])) {
+    echo "<p>You must be logged in to access this page.</p>";
+    include('Includes/footer.inc');
+    exit();
+}
+?>
 <body>
     
     <div class="add-pet-form">   
