@@ -5,6 +5,7 @@ include('Includes/header.inc');
 include('Includes/nav.inc');
 ?>
 <?php
+session_start();
 if (!isset($_SESSION['username'])) {
     echo "<p>You must be logged in to access this page.</p>";
     include('Includes/footer.inc');
