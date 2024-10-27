@@ -1,8 +1,8 @@
 <?php
-require_once('includes/db_connect.inc');
+require_once('Includes/db_connect.inc');
 $title = "Delete Confirmation";
-include('includes/header.inc');
-include('includes/nav.inc');
+include('Includes/header.inc');
+include('Includes/nav.inc');
 
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
@@ -31,5 +31,5 @@ if (!empty($_GET['id'])) {
         }
     }
 }
-include('includes/footer.inc');
+include('Includes/footer.inc');
 ?>

@@ -1,8 +1,8 @@
 <?php
-require_once('includes/db_connect.inc');
+require_once('Includes/db_connect.inc');
 $title = "Update Form";
-include('includes/header.inc');
-include('includes/nav.inc');
+include('Includes/header.inc');
+include('Includes/nav.inc');
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
     $sql = "select * from pets where petid=?";
@@ -52,5 +52,5 @@ if (!empty($_GET['id'])) {
 <?php
     }
 }
-include('includes/footer.inc');
+include('Includes/footer.inc');
 ?>
