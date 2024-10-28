@@ -4,6 +4,13 @@ $title = "Delete Confirmation";
 include('includes/header.inc');
 include('includes/nav.inc');
 
+session_start();
+if (!isset($_SESSION['username'])) {
+    echo "<p>You must be logged in to access this page.</p>";
+    include('Includes/footer.inc');
+    exit();
+}
+
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
     $sql = "select * from pets where petid=?";

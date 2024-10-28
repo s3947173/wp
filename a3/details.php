@@ -42,9 +42,12 @@ if (!empty($_GET['petid'])) {
             echo "</div>";
 
             echo "</div>";
-
-            echo "<td><a class='link' href='edit_form.php?id={$row['petid']}'>Edit</a></td>";
-            echo "<td><a class='link' href='delete_confirm.php?id={$row['petid']}'>Delete</a></td>";
+            
+            session_start();
+            if (isset($_SESSION['username'])) {
+                echo "<td><a class='link' href='edit_form.php?id={$row['petid']}'>Edit</a></td>";
+                echo "<td><a class='link' href='delete_confirm.php?id={$row['petid']}'>Delete</a></td>";
+            }
         }
     } else {
         echo "<p>No results found for this pet.</p>";
