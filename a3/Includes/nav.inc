@@ -9,19 +9,20 @@
 	<div class="Icon">
 	   <span class="material-symbols-outlined">search</span>
     </div>
-	<div class="dropdown">
-		<form>
-			<select id="menu" onchange=doMenu();>
-				<option value="">Select an Option...</option>
-				<option value="index.php">Index</option>
-				<option value="pets.php">Pets</option>
-				<option value="add.php">Add</option>
-				<option value="login.php">Login</option>
-				<option value="logout.php">Logout</option>
-				<option value="register.php">Register</option>
-			</select>
-		</form>
-	</div>
+	<nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="pets.php">Pets</a></li>
+          <li><a href="add.php">Add</a></li>
+		  <li><a href="gallery.php">Gallery</a></li>
+		  <li><a href="login.php">Login</a></li>
+		  <li><a href="register.php">Register</a></li>
+        </ul>
+       </div>
+    </nav>
 	
    </header>
 <!-- end of nav.inc -->
