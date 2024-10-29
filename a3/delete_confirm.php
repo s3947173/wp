@@ -10,12 +10,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-session_start();
-if (!isset($_SESSION['username'])) {
-    echo "<p>You must be logged in to access this page.</p>";
-    include('Includes/footer.inc');
-    exit();
-}
 
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
