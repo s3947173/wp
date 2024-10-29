@@ -1,10 +1,12 @@
 <?php
 include('Includes/header.inc');
 ?>
-<h1>Login page</h1>
 <?php
 include('Includes/nav.inc');
 ?>
+<div class="heading">
+<h1>Login page</h1>
+</div>
 <form action="process_login.php" method="post">
     <label for="username">username</label>
     <input type="text" name="username" id="username"><br><br>

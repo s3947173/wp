@@ -1,10 +1,12 @@
 <?php
 include('Includes/header.inc');
 ?>
-<h1>Registration page</h1>
 <?php
 include('Includes/nav.inc');
 ?>
+<div class="heading">
+<h1>Registration page</h1>
+</div>
 <div>
     <form action="process_register.php" method="post">
         <label for="username">username</label>

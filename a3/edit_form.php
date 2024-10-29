@@ -1,8 +1,8 @@
 <?php
 require_once('Includes/db_connect.inc');
 $title = "Update Form";
-include('includes/header.inc');
-include('includes/nav.inc');
+include('Includes/header.inc');
+include('Includes/nav.inc');
 
 session_start();
 if (!isset($_SESSION['username'])) {
