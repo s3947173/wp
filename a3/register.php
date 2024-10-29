@@ -5,7 +5,7 @@ include('Includes/header.inc');
 include('Includes/nav.inc');
 ?>
 <div class="heading">
-<h1>Registration page</h1>
+<h2>Registration page</h2>
 </div>
 <div>
     <form action="process_register.php" method="post">

@@ -5,7 +5,7 @@ include('Includes/header.inc');
 include('Includes/nav.inc');
 ?>
 <div class="heading">
-<h1>Login page</h1>
+<h2>Login page</h2>
 </div>
 <form action="process_login.php" method="post">
     <label for="username">username</label>

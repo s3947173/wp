@@ -19,6 +19,9 @@
                         <a class="nav-link" href="pets.php">Pets</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="add.php">Add more</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
