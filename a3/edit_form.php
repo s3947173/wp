@@ -1,5 +1,5 @@
 <?php
-require_once('includes/db_connect.inc');
+require_once('Includes/db_connect.inc');
 $title = "Update Form";
 include('includes/header.inc');
 include('includes/nav.inc');
@@ -60,5 +60,5 @@ if (!empty($_GET['id'])) {
 <?php
     }
 }
-include('includes/footer.inc');
+include('Includes/footer.inc');
 ?>

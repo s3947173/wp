@@ -1,8 +1,14 @@
 <?php
-require_once('includes/db_connect.inc');
+require_once('Includes/db_connect.inc');
 $title = "Delete Confirmation";
-include('includes/header.inc');
-include('includes/nav.inc');
+include('Includes/header.inc');
+include('Includes/nav.inc');
+session_start();
+if (!isset($_SESSION['username'])) {
+    echo "<p>You must be logged in to access this page.</p>";
+    include('Includes/footer.inc');
+    exit();
+}
 
 session_start();
 if (!isset($_SESSION['username'])) {
@@ -38,5 +44,5 @@ if (!empty($_GET['id'])) {
         }
     }
 }
-include('includes/footer.inc');
+include('Includes/footer.inc');
 ?>
