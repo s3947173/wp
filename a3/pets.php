@@ -6,7 +6,8 @@ include('Includes/nav.inc');
 ?>
 <body>
    <main>
-   <table>
+   <table class="table table-striped">
+     <div class="tbody">
         <tr>
             <th>Pet</th>
             <th>Age</th>
@@ -30,7 +31,7 @@ include('Includes/nav.inc');
                echo "<tr><td colspan='4'>No pets found.</td></tr>";
            }
         ?>
-                              
+     </div>                      
     </table>
     <div class="pets-text">
 	  <h1>Discover Pets Victoria</h1>
@@ -41,7 +42,7 @@ include('Includes/nav.inc');
      </p>
     </div>
     <div class="pets">
-	  <img src="images\images\pets.jpeg" alt="Pets">
+	  <img src="images/pets.jpeg" alt="Pets">
     </div>
    </main>
 </body>
