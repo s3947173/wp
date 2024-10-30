@@ -23,7 +23,7 @@ $stmt->bind_param("sssssss", $petname, $type, $description, $image, $caption, $a
 $stmt->execute();
 if ($stmt->affected_rows > 0) {
     echo "A new pet has been added";
-    move_uploaded_file($_FILES["image"]["tmp_name"], "images/" . $_FILES["image"]["name"]);
+    move_uploaded_file($_FILES["image"]["tmp_name"], "images/" . $image);
 }
 ?>
 <br><a href="pets.php">Back to list of pets</a>
