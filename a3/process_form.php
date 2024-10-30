@@ -13,7 +13,7 @@ include('Includes/db_connect.inc');
 $petname = $_POST['petname'];
 $type = $_POST['type'];
 $description = $_POST['description'];
-$image = str_replace(' ', '',"images/".$_FILES["image"]["name"]);
+$image = str_replace(' ', '',$_FILES["image"]["name"]);
 $caption = $_POST['caption'];
 $age = $_POST['age'];
 $location = $_POST['location'];
