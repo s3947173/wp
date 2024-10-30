@@ -5,30 +5,41 @@ include('Includes/header.inc');
 include('Includes/nav.inc');
 ?>
 <body>
+  
    <div class="home">
     <main>
+    <?php
+     include('Includes/db_connect.inc');
+      // Query to fetch the last 4 records based on the highest IDs
+      $sql = "SELECT image FROM pets ORDER BY petid DESC LIMIT 4";
+      $result = $conn->query($sql);
+
+      $images = [];
+      if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+        $images[] = $row;
+        }   
+      }
+      $conn->close();
+    ?>
     <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <?php for ($i = 0; $i < count($images); $i++): ?>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="<?= $i ?>" class="<?= $i === 0 ? 'active' : '' ?>" aria-label="Slide <?= $i + 1 ?>"></button>
+    <?php endfor; ?>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/cat1.jpeg" class="d-block w-100" alt="Milo">
-    </div>
-    <div class="carousel-item">
-      <img src="images/dog1.jpeg" class="d-block w-100" alt="Dog 1 ">
-    </div>
-    <div class="carousel-item">
-      <img src="images/cat2.jpeg" class="d-block w-100" alt="Cat 2">
-    </div>
+    <?php foreach ($images as $index => $image): ?>
+      <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
+        <img src="<?= htmlspecialchars($image['image']) ?>" class="d-block w-100">
+      </div>
+    <?php endforeach; ?>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
