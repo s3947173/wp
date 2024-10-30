@@ -77,11 +77,11 @@ footer{
     padding: 10px;
     position: absolute;
 }
-.pet-table {
+.table.pet-table {
     float: right;
     text-align: left;
     border: 1px solid;
-    width: 50%;
+    width: 50% !important; 
     font-family: 'Ysabeau SC';
     margin-right: 20px;
     position: relative;
