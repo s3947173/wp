@@ -13,7 +13,7 @@ include('Includes/db_connect.inc');
 $petname = $_POST['petname'];
 $type = $_POST['type'];
 $description = $_POST['description'];
-$image = str_replace(' ', '', $_FILES["image"]["name"]);
+$image = str_replace(' ', '',"images/".$_FILES["image"]["name"]);
 $caption = $_POST['caption'];
 $age = $_POST['age'];
 $location = $_POST['location'];
@@ -23,7 +23,7 @@ $stmt->bind_param("sssssss", $petname, $type, $description, $image, $caption, $a
 $stmt->execute();
 if ($stmt->affected_rows > 0) {
     echo "A new pet has been added";
-    move_uploaded_file($_FILES["image"]["tmp_name"], $_FILES["image"]["name"]);
+    move_uploaded_file($_FILES["image"]["tmp_name"], "images/" . $_FILES["image"]["name"]);
 }
 ?>
 <br><a href="pets.php">Back to list of pets</a>
