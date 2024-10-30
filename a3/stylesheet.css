@@ -77,7 +77,7 @@ footer{
     padding: 10px;
     position: absolute;
 }
-.table.table.striped {
+.pet-table {
     float: right;
     text-align: left;
     border: 1px solid;

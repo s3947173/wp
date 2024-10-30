@@ -7,7 +7,7 @@ include('Includes/nav.inc');
 <body>
    <main>
    
-   <table class="table table-striped">
+   <table class="table table-striped pet-table">
         <tr>
             <th>Pet</th>
             <th>Age</th>
