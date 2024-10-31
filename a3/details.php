@@ -24,7 +24,7 @@ if (!empty($_GET['petid'])) {
             // Pet Image Section
             if (!empty($row['image'])) {
                 echo "<div class='pet-image'>";
-                echo "<img src='{$row['image']}' alt='{$row['petname']}'>";
+                echo "<img src='images/{$row['image']}' alt='{$row['petname']}'>";
                 echo "</div>";
             }
 

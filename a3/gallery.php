@@ -39,7 +39,7 @@ include('Includes/nav.inc');
                     while($row = $result->fetch_assoc()) {
                         echo '<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">';
                         echo '<div class="pet-card">';
-                        echo '<img src="' . $row["image"] . '" alt="' . $row["petname"] . '">';
+                        echo "<img src='images/{$row['image']}' alt='{$row['petname']}'>";
                         echo '<div class="overlay">';
                         echo '<a href="details.php?petid=' . $row["petid"] . '" class="text-white">Discover more!</a>';
                         echo '</div>';
