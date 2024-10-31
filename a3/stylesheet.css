@@ -299,3 +299,55 @@ table th{
     object-fit: cover;
 
 }
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-input, .search-select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px; /* Adjust as needed */
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #2b755e; /* Adjust color to match the search button in the image */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #1e5647; /* Darker shade on hover */
+}
+.login-form h2 {
+    color: #008080;
+    margin-bottom: 10px;
+    font-family: 'Poetsen One';
+    text-align: center;
+}
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #36454F;
+    font-family: 'Ysabeau SC';
+}
+.login-form input[type="text"],
+.login-form textarea,
+.add-pet-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
