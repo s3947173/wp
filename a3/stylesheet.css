@@ -76,6 +76,7 @@ footer{
     font-size: 15px;
     padding: 10px;
     position: absolute;
+    left: -15px;
 }
 .table.pet-table {
     float: right;
