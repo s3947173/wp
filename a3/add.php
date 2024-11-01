@@ -2,9 +2,6 @@
 include('Includes/header.inc');
 ?>
 <?php
-include('Includes/nav.inc');
-?>
-<?php
 if (!isset($_SESSION['username'])) {
     echo "<p>You must be logged in to access this page.</p>";
     include('Includes/footer.inc');
@@ -12,7 +9,9 @@ if (!isset($_SESSION['username'])) {
 }
 ?>
 <body>
-    
+<?php
+include('Includes/nav.inc');
+?>  
     <div class="add-pet-form">   
     <form action="process_form.php" method="post" enctype="multipart/form-data">
             <h2>Add a pet</h2>
@@ -40,7 +39,7 @@ if (!isset($_SESSION['username'])) {
             </div>
             <div class="mb-3">
               <label for="age">Age (months):</label>
-              <input type="number" id="age" name="age" placeholder="Age of a pet in months"  required min="1900" max="2021" size="4" class="form-control w-50" required>
+              <input type="number" id="age" name="age" placeholder="Age of a pet in months"  class="form-control w-50" required>
             </div>
             <div class="mb-3">
               <label for="location">Location:</label>
@@ -54,8 +53,7 @@ if (!isset($_SESSION['username'])) {
             </div>
     </form>
     </div>
-</body>
-
 <?php
 include('Includes/footer.inc')
 ?>
+</body>

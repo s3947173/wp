@@ -1,10 +1,10 @@
 <?php 
 include('Includes/header.inc');
 ?>
+<body>
 <?php
 include('Includes/nav.inc');
 ?>
-<body>
    <main>
 
    <table class="table table-striped pet-table">
@@ -53,10 +53,8 @@ include('Includes/nav.inc');
 	  <img src="images/pets.jpeg" class="img-fluid" alt="Pets">
     </div>
    </main>
-</body>
-
-
 <?php
 $conn->close();
 include('Includes/footer.inc')
 ?>
+</body>

@@ -1,10 +1,10 @@
 <?php 
 include('Includes/header.inc');
 ?>
+<body>
 <?php
 include('Includes/nav.inc');
 ?>
-<body>
     <main> 
         <div class="gallery-text">
             <h1>Pets Victoria has a lot to offer!</h1>
@@ -54,8 +54,8 @@ include('Includes/nav.inc');
             </div>
         </div>
     </main>
-</body>
 <?php
 $conn->close();
 include('Includes/footer.inc')
 ?>
+</body>

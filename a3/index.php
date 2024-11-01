@@ -1,10 +1,10 @@
 <?php 
 include('Includes/header.inc');
 ?>
+<body>
 <?php
 include('Includes/nav.inc');
 ?>
-<body>
   
    <div class="home">
     <main>
@@ -31,7 +31,7 @@ include('Includes/nav.inc');
   <div class="carousel-inner">
     <?php foreach ($images as $index => $image): ?>
       <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-      <img src="images/<?= htmlspecialchars($image['image']) ?>" class="d-block w-100">
+      <img src="images/<?= htmlspecialchars($image['image']) ?>" class="d-block w-100" alt="image">
       </div>
     <?php endforeach; ?>
   </div>
@@ -43,7 +43,7 @@ include('Includes/nav.inc');
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+ </div>
 	 <div class="heading">
 	   <h1>Pets Victoria</h1>
 	   <h2>Welcome to pet 
@@ -83,8 +83,8 @@ include('Includes/nav.inc');
 </div>
    </main>
   </div>
-</body>
-
 <?php
 include('Includes/footer.inc')
 ?>
+</body>
+
