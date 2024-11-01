@@ -1,6 +1,10 @@
 <?php 
 include('Includes/header.inc');
 ?>
+<body>
+<?php
+include('Includes/nav.inc');
+?>  
 <?php
 if (!isset($_SESSION['username'])) {
     echo "<p>You must be logged in to access this page.</p>";
@@ -8,10 +12,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 ?>
-<body>
-<?php
-include('Includes/nav.inc');
-?>  
     <div class="add-pet-form">   
     <form action="process_form.php" method="post" enctype="multipart/form-data">
             <h2>Add a pet</h2>
